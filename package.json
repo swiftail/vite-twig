@@ -1,15 +1,15 @@
 {
-  "name": "vite-plugin-handlebars",
-  "version": "1.6.0",
-  "description": "Vite plugin for Handlebars support in HTML",
+  "name": "vite-twig",
+  "version": "0.0.2",
+  "description": "Vite plugin for Twig support in HTML",
   "source": "src/index.ts",
   "main": "dist/index.js",
   "module": "dist/index.module.js",
   "files": [
     "dist"
   ],
-  "repository": "git@github.com:alexlafroscia/vite-plugin-handlebars.git",
-  "author": "Alex LaFroscia <alex@lafroscia.com>",
+  "repository": "",
+  "author": "",
   "license": "MIT",
   "private": false,
   "scripts": {
@@ -17,11 +17,10 @@
     "lint": "eslint .",
     "test": "jest",
     "release": "standard-version",
-    "prepare": "husky install",
     "prepublishOnly": "yarn build"
   },
   "dependencies": {
-    "handlebars": "^4.7.6",
+    "twig": "^1.15.4",
     "vite": "^2.0.0"
   },
   "devDependencies": {
@@ -30,6 +29,7 @@
     "@movable/prettier-config": "^0.3.6",
     "@tsconfig/node14": "^1.0.0",
     "@types/jest": "^27.0.1",
+    "@types/twig": "^1.12.9",
     "file-fixture-factory": "^1.0.1",
     "husky": "^7.0.2",
     "jest": "^26.6.3",
